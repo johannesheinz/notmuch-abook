@@ -75,8 +75,9 @@ import sys
 import docopt
 import notmuch
 import sqlite3
-import email.utils
+import email.message
 import email.parser
+import email.utils
 
 from io import open
 
