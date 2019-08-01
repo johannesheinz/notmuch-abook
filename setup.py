@@ -19,7 +19,7 @@ Notmuch Addressbook Utility
 """ % read('README')
 
 setup(name='notmuch_abook',
-      version="v1.8",
+      version="v2.0",
       description="Notmuch addressbook",
       long_description=long_description,
       classifiers=["Development Status :: 4 - Beta",
