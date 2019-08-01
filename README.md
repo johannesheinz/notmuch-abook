@@ -6,24 +6,23 @@
 
 ## Installation
 
-### Standalone install
+### Standalone
 
-if you do not want to use the vim script file, you can install the module as
-follows:
+If you do not want to use the Vundle/Vimscript file, you can install the module as follows:
 
 ```sh
-python setup.py install
+python3 setup.py install
 ```
 
 or using:
 
 ```sh
-pip install notmuch_abook
+pip3 install notmuch_abook
 ```
 
-### Vimscript install
+### Vundle/Vimscript
 
-Use [`Vundle`](https://github.com/VundleVim/Vundle.vim) to install this script, add to your vimrc:
+Use [`Vundle`](https://github.com/VundleVim/Vundle.vim) to install this script, add to `${HOME}/.vimrc`:
 
 ```vim
 Plugin 'johannesheinz/notmuch-abook'
@@ -62,7 +61,7 @@ backend=sqlite3
 query=folder:Inbox OR folder:Sent
 ```
 
-If you use a non-default notmuch configuration file, you should set the `NOTMUCH_CONFIG` environment variable (see notmuch man page).  This can even be done inside the `.vimrc` file, with:
+If you use a non-default notmuch configuration file, you should set the `NOTMUCH_CONFIG` environment variable (see notmuch man page). This can even be done inside the `${HOME}/.vimrc` file, with:
 
 ```vim
 let $NOTMUCH_CONFIG = expand("~/.notmuch-config-custom")
